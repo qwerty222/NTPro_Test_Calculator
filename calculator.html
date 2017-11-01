@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>calculator</title>
+    <link href='clc.css' rel='stylesheet' type='text/css' />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <script src="clc.js"></script>
+</head>
+<body>
+    <div class='frame container' style="margin-top:150px;margin-left:auto">
+        <div class="row">
+            <div class="col-lg-12 display gradient text-right" >
+                <img src="img/close.png">
+                <p id="expression"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 result gradient text-right" id="result"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 key number text-center" id='clear_all'>
+                <span>AC</span>
+            </div>
+            <div class="col-lg-3 key operation text-center" value="(">
+                <span>(</span>
+            </div>
+            <div class="col-lg-3 key operation text-center" value=")">
+                <span>)</span>
+            </div>
+            <div class="col-lg-3 key operation text-center orange" value='/'>
+                <span>&divide;</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 key number text-center" value='7'>
+                <span>7</span>
+            </div>
+            <div class="col-lg-3 key number text-center" value='8'>
+                <span>8</span>
+            </div>
+            <div class="col-lg-3 key number text-center" value='9'>
+                <span>9</span>
+            </div>
+            <div class="col-lg-3 key operation text-center orange" value='*'>
+                <span>&times;</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 key number text-center" value='4'>
+                <span>4</span>
+            </div>
+            <div class="col-lg-3 key number text-center" value='5'>
+                <span>5</span>
+            </div>
+            <div class="col-lg-3 key number text-center" value='6'>
+                <span>6</span>
+            </div>
+            <div class="col-lg-3 key operation text-center orange" value='-'>
+                <span>&minus;</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 key number text-center" value='1'>
+                <span>1</span>
+            </div>
+            <div class="col-lg-3 key number text-center" value='2'>
+                <span>2</span>
+            </div>
+            <div class="col-lg-3 key number text-center" value='3'>
+                <span>3</span>
+            </div>
+            <div class="col-lg-3 key operation text-center orange" value='+'>
+                <span>+</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 key number text-center no_bottom"
+            style="border-right: 0px; border-radius: 0 0 0 4px;" value='0'>
+                <span>0</span>
+            </div>
+            <div class="col-lg-3 key text-center no_bottom" ></div>
+            <div class="col-lg-3 key number text-center no_bottom" value='.'>
+                <span>,</span>
+            </div>
+            <div class="col-lg-3 key operation text-center orange no_bottom"
+            value='=' style="border-radius: 0 0 4px 0;">
+                <span>=</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
